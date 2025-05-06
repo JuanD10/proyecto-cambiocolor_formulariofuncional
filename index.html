@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio - Juan Salas</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen flex flex-col bg-[#0f172a] text-white">
+
+
+  <nav class="bg-gray-900 text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h4 class="font-bold text-lg">Mi Sitio</h4>
+      
+      <button id="menu-btn" class="lg:hidden focus:outline-none">
+        ☰
+      </button>
+  
+      <ul id="nav-links" class="hidden lg:flex space-x-6 text-sm font-semibold">
+        <li><a href="index.html" class="hover:text-indigo-400">Inicio</a></li>
+        <li><a href="projects.html" class="hover:text-indigo-400">Proyectos</a></li>
+        <li><a href="contact.html" class="hover:text-indigo-400">Contacto</a></li>
+      </ul>
+    </div>
+  
+    <div id="mobile-menu" class="lg:hidden hidden px-4 pb-4">
+      <ul class="space-y-2 text-sm font-semibold">
+        <li><a href="index.html" class="block hover:text-indigo-400">Inicio</a></li>
+        <li><a href="projects.html" class="block hover:text-indigo-400">Proyectos</a></li>
+        <li><a href="contact.html" class="block hover:text-indigo-400">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+
+  <main class="flex-grow container mx-auto px-4 py-16 text-center">
+    <h2 class="text-4xl font-bold mb-6">¡Hola! Soy Juan Salas</h2>
+    <p class="text-lg max-w-2xl mx-auto">
+      Soy estudiante de Ingeniería de Sistemas apasionado por el desarrollo web. Me encanta crear experiencias digitales modernas, funcionales y atractivas.
+    </p>
+    <a href="projects.html" class="mt-8 inline-block bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded">Ver Proyectos</a>
+  </main>
+
+  <footer class="bg-gray-800 text-center text-white py-4">
+    © 2025 Juan Salas | <span id="color-label">#0f172a</span>
+    <button id="color-btn" class="ml-4 bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded">Cambiar color</button>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

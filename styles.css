@@ -1,0 +1,28 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    transition: background-color 0.5s;
+  }
+  
+  input, textarea {
+    outline: none;
+    border: 1px solid #4c1d95;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #6b21a8;
+    box-shadow: 0 0 5px #6b21a8;
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #6b21a8;
+  }
+  
+  nav ul li a {
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #c084fc;
+  }
+  

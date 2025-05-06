@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Juan Salas</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="email.js" defer></script> 
+</head>
+<body class="min-h-screen flex flex-col">
+  <nav class="bg-gray-900 text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h4 class="font-bold text-lg">Mi Sitio</h4>
+      
+      <button id="menu-btn" class="lg:hidden focus:outline-none">
+        ☰
+      </button>
+  
+      <ul id="nav-links" class="hidden lg:flex space-x-6 text-sm font-semibold">
+        <li><a href="index.html" class="hover:text-indigo-400">Inicio</a></li>
+        <li><a href="projects.html" class="hover:text-indigo-400">Proyectos</a></li>
+        <li><a href="contact.html" class="hover:text-indigo-400">Contacto</a></li>
+      </ul>
+    </div>
+  
+    <div id="mobile-menu" class="lg:hidden hidden px-4 pb-4">
+      <ul class="space-y-2 text-sm font-semibold">
+        <li><a href="index.html" class="block hover:text-indigo-400">Inicio</a></li>
+        <li><a href="projects.html" class="block hover:text-indigo-400">Proyectos</a></li>
+        <li><a href="contact.html" class="block hover:text-indigo-400">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+  <main class="flex-grow container mx-auto px-4 py-16 max-w-lg">
+    <h2 class="text-3xl font-bold mb-6 text-center">Contáctame</h2>
+
+    <form id="contact-form" class="bg-gray-800 text-white p-6 rounded shadow-lg">
+      <label class="block mb-2">Nombre</label>
+      <input type="text" name="nombre" class="w-full mb-4 p-2 rounded bg-gray-700 text-white" required>
+
+      <label class="block mb-2">Correo</label>
+      <input type="email" name="correo" class="w-full mb-4 p-2 rounded bg-gray-700 text-white" required>
+
+      <label class="block mb-2">Mensaje</label>
+      <textarea name="mensaje" rows="5" class="w-full mb-4 p-2 rounded bg-gray-700 text-white" required></textarea>
+
+      <button type="submit" class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded">Enviar</button>
+    </form>
+
+    <p id="form-status" class="text-center mt-4 text-green-400 hidden">¡Mensaje enviado correctamente!</p>
+  </main>
+
+  <footer class="bg-gray-800 text-center text-white py-4">
+    © 2025 Juan Salas | <span id="color-label">#0f172a</span>
+    <button id="color-btn" class="ml-4 bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded">Cambiar color</button>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
